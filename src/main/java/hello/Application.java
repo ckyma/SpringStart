@@ -1,4 +1,4 @@
-package main.java.hello;
+package hello;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,7 +15,6 @@ public class Application {
     @Bean
     MessageService mockMessageService(){
         return new MessageService() {
-            @Override
             public String getMessage() {
                 return "Hello World";
             }
